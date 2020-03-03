@@ -1,3 +1,10 @@
+# Using in React applications
+[DEMO] [[SLIDES]](https://slides.com/riacarmin/using-d3js-with-react)
+
+Introduction to integrating D3.js data visualization in React apps using functional components and hooks.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
