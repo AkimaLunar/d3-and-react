@@ -1,0 +1,13 @@
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    max-width: 1072px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}

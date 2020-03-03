@@ -1,0 +1,65 @@
+import * as d3 from 'd3';
+
+const HEIGHT = 300;
+
+export default class Chart {
+    constructor(element) {
+        this.element = element;
+        this.data = null;
+        this.margin = {
+            top: 40,
+            right: 60,
+            bottom: 40,
+            left: 60,
+        };
+        this.size = element ? element.getBoundingClientRect() : {};
+        this.init();
+    }
+
+    get height() {
+        return HEIGHT - this.margin.top - this.margin.bottom;
+    }
+
+    get width() {
+        return this.size.width - this.margin.left - this.margin.right;
+    }
+
+    // Initialize the canvas =====================================================
+    init = () => {
+        this.svg = d3
+            .select(this.element)
+            .append('svg')
+            .attr('height', this.height + this.margin.top + this.margin.bottom)
+            .attr('width', this.width + this.margin.left + this.margin.right)
+            .style('font', '10px sans-serif');
+
+        this.canvas = this.svg
+            .append('g')
+            .attr(
+                'transform',
+                `translate(${this.margin.left}, ${this.margin.top})`
+            );
+    };
+
+    // Initialize the canvas =====================================================
+    setData = (data) => {
+        this.data = data;
+    };
+
+    resize = (element) => {
+        this.destroy();
+        this.size = element.getBoundingClientRect();
+        this.init();
+        this.render();
+    };
+
+    render = () => {
+        if (!this.data) {
+            return;
+        }
+    };
+
+    destroy = () => {
+        this.svg.remove();
+    };
+}

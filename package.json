@@ -1,0 +1,21 @@
+{
+    "name": "example-d3-one",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "d3": "^5.15.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-scripts": "0.9.x",
+        "uuid": "^7.0.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "build": "react-scripts build",
+        "eject": "react-scripts eject",
+        "generate": "plop",
+        "start": "react-scripts start",
+        "test": "react-scripts test --env=jsdom"
+    }
+}
