@@ -1,4 +1,4 @@
-# Using in React applications
+# Using D3.js in React applications
 [DEMO] [[SLIDES]](https://slides.com/riacarmin/using-d3js-with-react)
 
 Introduction to integrating D3.js data visualization in React apps using functional components and hooks.
